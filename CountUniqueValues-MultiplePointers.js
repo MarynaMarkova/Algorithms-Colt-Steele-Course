@@ -1,4 +1,5 @@
-/// Multiple Pointers - count Unique Values
+// Multiple Pointers - count Unique Values
+// It works only with a sorted array
 
 /*countUniqueValues([1,1,1,1,1,2]) //2
 countUniqueValues([1,2,3,4,4,4,7,7,12,12,13]) //7
@@ -13,8 +14,16 @@ function countUniqueValues(arr) {
       i++;
       arr[i] = arr[j];
     }
+    console.log(i, j);
   }
   return i + 1;
 }
 
 countUniqueValues([1, 1, 2, 3, 3, 4, 5, 6, 6, 7]);
+
+// Illustration:
+//              i
+// [1,2,3,4,5,6,7,6,6,7]
+//                    j
+
+//Big O = O(n);
