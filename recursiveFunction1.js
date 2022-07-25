@@ -8,8 +8,6 @@ function countDown(num) {
   countDown(num);
 }
 
-countDown(5);
-
 // without recursion
 
 // function countDown(num) {
@@ -19,4 +17,4 @@ countDown(5);
 //   console.log("All done!");
 // }
 
-// countDown(5);
+countDown(5);
