@@ -1,3 +1,5 @@
+// write a function called same, which accepts two arrays. The function should return true if every value in the array has it's corresponding value squared in the second array. The frequency of values must be the same.
+
 //A Naive Solution
 
 // function same(arr1, arr2){
@@ -14,6 +16,8 @@
 //     }
 //     return true;
 // }
+
+// Big O = O(N):
 
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -40,4 +44,7 @@ function same(arr1, arr2) {
   return true;
 }
 
-same([1, 2, 3, 2, 5], [4, 1, 9, 4, 11]);
+same([1, 2, 3, 2, 5], [4, 1, 9, 4, 11]); // true
+same([1, 2, 3], [4, 1, 9]); // true
+same([1, 2, 3], [1, 9]); // false
+same([1, 2, 1], [4, 4, 1]); // false
