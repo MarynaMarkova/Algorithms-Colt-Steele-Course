@@ -1,20 +1,18 @@
-// SWAPPING
+// *********************
+// BUBBLE SORT
+// *********************
 
-// ES5
-function swap(arr, idx1, idx2) {
-  let temp = arr[idx1];
-  arr[idx1] = arr[idx2];
-  arr[idx2] = temp;
-}
+// Big O TIME Complexity:
 
-// ES2015
-const swap2 = (arr, idx1, idx2) => {
-  [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
-};
+// Best: O(n) - for sorted or almost sorted arrays;
+// Average: O(n*n);
+// Worst: O(n*n);
 
-// Bubble Sort
-// Time Complexity Big O = O(N*N) - worst case;
-// Big O = O(N) - for sorted or almost sorted arrays;
+// Big O SPACE Complexity: O(1);
+
+// Bubble sort, selection sort and insertion sort are roughly equivalent.
+
+//https://visualgo.net/en/sorting?slide=1
 
 function bubbleSort(arr) {
   let noSwaps;

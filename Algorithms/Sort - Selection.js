@@ -1,3 +1,21 @@
+// *********************
+// SELECTION SORT
+// *********************
+
+// Big O TIME Complexity:
+
+// Best: O(n*n) - for sorted or almost sorted arrays;
+// Average: O(n*n);
+// Worst: O(n*n);
+
+// Big O SPACE Complexity: O(1);
+
+// Does not perfom well. It's good only if you have to minimize the number of swaps. And it's easy to understand :).
+
+// Bubble sort, selection sort and insertion sort are roughly equivalent.
+
+// https://visualgo.net/en/sorting
+
 // ES5
 // function selectionSort(arr){
 //      for (let i=0; i<arr.length; i++){
@@ -15,7 +33,6 @@
 // }
 
 // ES2015
-
 function selectionSort(arr) {
   const swap = (arr, idx1, idx2) =>
     ([arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]);
