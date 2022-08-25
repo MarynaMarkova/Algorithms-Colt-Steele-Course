@@ -13,11 +13,13 @@
 function getDigit(num, i) {
   return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
 }
+//getDigit(12345, 4); //1
 
 function digitCount(num) {
   if (num === 0) return 1;
   return Math.floor(Math.log10(Math.abs(num))) + 1;
 }
+//digitCount(314); //3
 
 function mostDigits(nums) {
   let maxDigits = 0;
@@ -26,6 +28,7 @@ function mostDigits(nums) {
   }
   return maxDigits;
 }
+//mostDigits([23,567,89,12234,90]) //5
 
 function radixSort(nums) {
   let maxDigitsCount = mostDigits(nums);
